@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+
+/* 共通 */
+body {
+    background-color: #fbfbfb
+}
+
+h1 {
+    text-align:center;
+    font-size: 3rem
+}
+
+p {
+    text-align: center;
+    font-size: 2.125rem
+}
+ 
+.box {
+    margin: 2rem auto 2rem auto;
+    width: 50rem;
+    border-radius: 0.2rem;
+    padding: 0.5rem 1rem;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    background-color: #fff;
+    font-weight: bold
+}
+
+.box p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 1.2rem
+}
+
+#submit {
+    text-align: right;
+    padding-top: 1rem
+}
+
+input[type=submit] {
+    border: none;
+    border-radius: 0.3rem;
+    box-shadow: 0px 1px 2px 1px rgb(0 0 0 / 20%);
+    background-color: rgb(25, 118, 210);
+    color:#fff;
+    font-size: 1.2rem
+}
+
+button:hover,
+input:hover {
+    cursor: pointer
+}
+
+
+/* リスト */
+.container > table {
+    margin: 3rem 5rem 1rem 5rem
+}
+
+form {
+    text-align: center
+}
+
+.container > table > tbody > tr > td > textarea {
+    resize: none;
+    margin-top: 1rem;
+    border: 0px;
+    box-shadow: 0px 0.5px 2px 2px rgb(0 0 0 / 20%);
+    border-radius: 0.3rem;
+    width: 95%;
+    background-color: #ffffff;
+    font-size: 1.3rem;
+    letter-spacing: 2px
+}
+
+tr:hover {
+    cursor: move
+}
+
+.remove {
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 50%;
+    width: 2.3rem;
+    background-color: tomato;
+    font-size: 2rem;
+    color: white
+}
+
+form #addRow, #back {
+    font-size: 1.3rem;
+    width: 6rem;
+    height: 2.4rem;
+    background-color: #fffcf4;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    box-shadow: 0px 1px 1px 1px rgb(0 0 0 / 20%);
+    border: 0;
+    margin: 0rem 1rem
+}
+
+
+/* p1.phpのリストとp5.phpの Before After */
+.box h1 {
+    text-align:center;
+    font-size: 2rem;
+    font-weight: 700
+}
+
+.box > .p1p5list > ul {
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    box-shadow: 0 0 5px silver;
+    border-radius: 0.5rem;
+    background-color: #fffcf4;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.6)
+}
+    
+.box > .p1p5list > ul > li {
+    line-height: 2.5rem
+}
+
+/* p1.php */
+.box > form > textarea {
+    resize: none;
+    width:100%;
+    height: 15rem;
+    font-size: 1.4rem;
+    box-shadow: 0px 1px 2px 1px rgb(0 0 0 / 20%);
+    border-radius: 0.3rem;
+    border: none;
+    color: rgb(68, 68, 68);
+    background-color: #ffffff;
+    line-height: 2rem;
+    letter-spacing: 0.05rem
+}
+
+/* p2.php */
+.p2list {
+    background-color: #fffcf4;
+    color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 5px silver;
+    border-radius: 0.5rem;
+    font-size: 1.2rem
+}
+
+.p2list > ul  {
+    padding: 30px 50px 0px 30px;
+    list-style: none;
+    line-height: 1.5em
+}
+
+input[type=checkbox] {
+	transform: scale(1.5);
+    margin-right: 0.8rem
+}
+
+/* p3.php */
+.sort {
+    padding-top: 0.4rem;
+    font-size: 1.7rem
+}
+
+/* p5.php */
+#return {
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.box > .p1p5list > .before {
+    padding: 0.5rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 0 5px silver;
+    border-radius: 0.5rem;
+    background-color: #fffcf4;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.2rem
+}
+
+
+/* スマホ用 */
+@media screen and (max-width: 480px) {
+    .box {
+        padding: 0em 0em;
+        margin: 2em 0em;
+        width: 100%
+    }
+
+    .box > form > textarea {
+        width: 95%;
+        height: 13rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.01rem;
+        font-size: 1rem
+    }
+
+    .container > table {
+        margin: 3rem 0.5rem 1rem 0.5rem
+    }
+
+    .remove {
+        margin-left: 0.5rem
+    }
+
+    .container > table > tbody > tr > td > textarea {
+        width: 100%
+    }
+}
